@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata for the Webpage -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Backup</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Bootstrap CSS files-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!-- jQuery UI CSS (optional) -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Google web fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Web Icons -->
+  <script src="https://use.fontawesome.com/6881fe51f6.js"></script>
+
+  <!-- Local styles -->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <!-- navbar include -->
+  <div id="navbar"></div>
+
+  <!-- Set images of 2000 x 400 -->
+  <div class="jumbotron" id="jumbotron">
+    <div class="container">
+    </div>
+  </div>
+
+  <!-- Credit badge -->
+  <p id="credit-badge"><a href="https://unsplash.com/@rxspawn?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer"
+      title="Download free, do whatever you want. High-resolution photos from Florian Olivo"><i class="fa fa-fw fa-camera-retro"></i> Florian Olivo</a></p>
+
+  <div class="spacer-div-3 hidden-xs hidden-xs"></div>
+
+  <!-- Main content    -->
+  <div id="main-container" class="container">
+
+    <h1 id="title">Code Backup</h1>
+
+    <div class="row push-down-4" id="each-post">
+      <div class="col-sm-12">
+
+        <!-- Content Below ------------------------------------------------------------------------>
+        <p class="text-center">
+          <button class="btn btn-lg btn-default" data-toggle="modal" data-target="#modal-tutorial">
+            <i class="fa fa-fw fa-film" aria-hidden="true"></i>
+            &nbsp;Tutorial
+          </button>
+        </p>
+        <form id="save-code-form" class="push-down-3">
+
+          <!-- Guide name -->
+          <form class="bsr-form " action="">
+            <div class="form-group">
+              <label for="exampleInputAmount">Guide Title</label>
+              <div class="input-group">
+                <div class="input-group-addon" id="refresh-button-1"><i class="fa fa-fw fa-refresh" aria-hidden="true"></i></div>
+                <input type="text" class="form-control" id="guideTitle">
+              </div>
+            </div>
+            <p class="gray exemplary">Example | <em>Africana Studies</em></p>
+
+            <!-- Page name -->
+            <div class="form-group">
+              <label for="exampleInputAmount">Page Title</label>
+              <div class="input-group">
+                <div class="input-group-addon" id="refresh-button-2"><i class="fa fa-fw fa-refresh" aria-hidden="true"></i></div>
+                <input type="text" class="form-control" id="pageTitle">
+              </div>
+            </div>
+            <p class="gray exemplary">Example | <em>Scholarly Articles and Books</em></p>
+
+            <!-- Box name -->
+            <div class="form-group">
+              <label for="exampleInputAmount">Box Title</label>
+              <div class="input-group">
+                <div class="input-group-addon" id="refresh-button-3"><i class="fa fa-fw fa-refresh" aria-hidden="true"></i></div>
+                <input type="text" class="form-control" id="boxTitle">
+              </div>
+            </div>
+            <p class="gray exemplary">Example | <em>Catalogs</em></p>
+
+            <!-- snippet identifier -->
+            <div class="form-group">
+              <label for="exampleInputAmount">Feature Name</label>
+              <div class="input-group">
+                <div class="input-group-addon" id="refresh-button-4"><i class="fa fa-fw fa-refresh" aria-hidden="true"></i></div>
+                <input type="text" class="form-control" id="featureTitle">
+              </div>
+            </div>
+            <p class="gray exemplary">Example | <em>CRL Search Box</em></p>
+
+            <!-- box name -->
+            <div class="form-group">
+              <label for="checkboxes">Paste Code Here</label>
+              <textarea id="pasted-code" class="form-control" rows="10"></textarea>
+            </div>
+
+          </form>
+
+          <p class="alert alert-danger" id="validation-message"><i class="fa fa-fw fa-exclamation-circle"></i> &nbsp;Please fill out all fields...</p>
+
+          <div class="push-down-4">
+            <button class="btn btn-default btn-lg" id="clear-button"><i class="fa fa-fw fa-refresh"></i> Clear</button>
+            <button type="submit" class="btn btn-primary btn-lg" id="save-button"><i class="fa fa-fw fa-save"></i> Save to File</button>
+          </div>
+
+
+
+
+      </div>
+      <!-- col-sm-12 -->
+    </div>
+    <!-- .row -->
+  </div>
+  <!-- .container -->
+
+  <!-- Back-to-top button -->
+  <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
+
+  <!-- navbar include -->
+  <div id="footer"></div>
+
+
+  <div class='modal fade' tabindex='-1' role='dialog' id='modal-tutorial'>
+    <div class='modal-dialog modal-lg' role='document'>
+      <div class='modal-content'>
+        <div class='modal-header'><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'><i class="fa fa-fw fa-lg fa-times"></i></span></button>
+          <h4 class='modal-title'>Code Backup Tutorial</h4>
+        </div>
+        <div class='modal-body'>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS Library -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <!-- Filesaver -->
+    <script src="js/filesaver.js"></script>
+
+    <!-- Local scripts -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

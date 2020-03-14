@@ -1,0 +1,305 @@
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f6f7fb;
+}
+
+/* .leader {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 3em;
+  font-weight: 500;
+  color: inherit;
+} */
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: #20364c;
+  font-weight: 500;
+}
+
+h1 {
+  margin-bottom: 4rem;
+}
+
+h2, h3 {
+  margin: 0 0 2rem !important;
+  color: slategray;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+h4, h5, h6 {
+  color: slategray !important;
+}
+
+p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
+  font-size: 1.75rem;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.gray {
+  color: lightslategray;
+}
+
+@media screen and (min-width: 768px) {
+  #main-container {
+    padding: 1.5rem 14rem;
+  }
+}
+
+/* @media screen and (max-width: 300px)  {
+
+  #main-container {
+    padding: 1.5rem 3rem;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  #main-container {
+    padding: 1.5rem 8rem;
+  }
+
+} */
+#main-container a:hover {
+  color: brown;
+  border: none !important;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+/* Links */
+#main-container a {
+  color: #1585cf;
+  font-weight: 500 !important;
+  text-decoration: none;
+}
+
+#main-container a:hover {
+  color: #1585cf;
+  border-bottom: 1px dashed #1585cf;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+#main-container a[role="button"]:hover {
+  text-decoration: none !important;
+  border-bottom: none;
+}
+
+/* Utility classes for positioning content ----------------------------------- */
+.padding-left-1 {
+  padding-left: 1rem;
+}
+
+.padding-left-2 {
+  padding-left: 2rem;
+}
+
+.push-down-1 {
+  margin-top: 1rem !important;
+}
+
+.push-down-2 {
+  margin-top: 2rem !important;
+}
+
+.push-down-3 {
+  margin-top: 3rem !important;
+}
+
+.push-down-4 {
+  margin-top: 4rem !important;
+}
+
+.push-down-6 {
+  margin-top: 6rem !important;
+}
+
+.push-down-8 {
+  margin-top: 6rem !important;
+}
+
+.pull-up-1 {
+  margin-top: -1rem !important;
+}
+
+.pull-up-2 {
+  margin-top: -1rem !important;
+}
+
+.pull-up-3 {
+  margin-top: -1rem !important;
+}
+
+.spacer-div-3 {
+  height: 45px;
+}
+
+.spacer-div-50 {
+  height: 50px;
+}
+
+.spacer-div-100 {
+  height: 100px;
+}
+
+/* Nav pills  */
+.nav-pills li.active a {
+  color: white !important;
+}
+
+.nav-pills li a:hover {
+  padding-bottom: 9px !important;
+  border-bottom: none !important;
+}
+
+.nav-pills li {
+  margin: 1rem !important;
+}
+
+.clearfix {
+  height: 3rem;
+}
+
+.link-blue {
+  color: #1585cf;
+}
+
+form {
+  margin-bottom: 5rem;
+}
+
+.form-group {
+  margin-top: 4rem;
+}
+
+.input-group .form-control {
+  padding: 2.5rem !important;
+  font-size: 1.5rem;
+}
+
+.jumbotron {
+  min-height: 300px;
+  max-height: 300px;
+  width: 100%;
+  margin-top: -40px;
+  margin-bottom: 0px;
+  padding-top: 10rem;
+  background: url(../img/florian.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title {
+  margin-bottom: 1.5rem !important;
+  color: #20364c !important;
+  font-size: 64px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.exemplary {
+  margin-top: -1rem;
+  margin-left: 5rem;
+  font-size: 95%;
+}
+
+#credit-badge {
+  text-align: right;
+  font-weight: 600;
+  padding-right: 3rem;
+  text-decoration: none;
+}
+
+/* Back to top button ----------------------------------------------------- */
+#topper {
+  display: none;
+  position: fixed;
+  bottom: 300px;
+  right: 0px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #1585cf;
+  color: white;
+  padding: 12px 6px 12px 6px;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+#topper:hover {
+  background-color: #1585cf;
+  opacity: .8;
+}
+
+/* Format the nav  ---------------------------------------------------------- */
+#nd-header {
+  background-color: #002a5d !important;
+  min-height: 95px;
+}
+
+#nd-link, #provost-link, .garamond {
+  font-family: 'EB Garamond', serif !important;
+  font-weight: 400;
+}
+
+#nd-link a, #provost-link a {
+  letter-spacing: .3rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'EB Garamond', serif !important;
+}
+
+#nd-link a:hover, #provost-link a:hover, #about-project:hover, #about-resources:hover {
+  color: lightgray;
+}
+
+#nd-link, #provost-link {
+  padding-top: .75rem !important;
+}
+
+@media screen and (max-width: 600px) {
+  #nd-link, #provost-link {
+    text-align: center;
+  }
+}
+
+/* Hide the validation message box until needed -- if not all boxes filled out */
+#validation-message {
+  display: none;
+}
+
+/* Footer */
+#page-footer {
+  background: #002A5D;
+  padding: 2rem;
+  color: #474e5f;
+  margin-top: 10rem;
+}
+
+#page-footer p,
+#page-footer a {
+  color: white;
+}
+
+#page-footer div.col-sm-4:last-of-type p a {
+  margin-left: 1.5rem;
+}
+
+#page-footer a:hover {
+  color: #939fbe;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  background: white !important;
+}
