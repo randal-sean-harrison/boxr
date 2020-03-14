@@ -85,7 +85,10 @@ $(document).ready(function() {
 
   });
 
-
+  // Turn off the video on modal close
+      $("#modal-tutorial").on('hidden.bs.modal', function(e) {
+        $("#modal-tutorial iframe").attr("src", $("#modal-tutorial iframe").attr("src"));
+      });
 
 
 });
